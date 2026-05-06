@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Deploy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Primeiro Deploy</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+      color: white;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #0ea5e9;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Primeira Modificação</h1>
-    <p>This is a simple HTML page for deployment testing.</p>
+  <div class="container">
+    <h1>🚀 Primeiro Mod. 1 </h1>
+
+    <p>
+     This is a simple HTML page for deployment testing.
+    </p>
+
+    <a href="#" class="btn">Explorar</a>
+  </div>
 </body>
 </html>
